@@ -6,20 +6,28 @@
 #define FOG 7
 #define FOG_LIGHT 0
 
-#define SEQUENCE_LENGTH 20
+#define SEQUENCE_LENGTH 28
 // { seconds, pin, state }
 int sequence[SEQUENCE_LENGTH][3] = {
-    {  0 * 60 +  0, FOG_LIGHT,    HIGH },
-    {  3 * 60 + 44, WATER_LIGHTS, HIGH },
-    {  4 * 60 + 57, DRESS,        HIGH },
+    {  0 * 60 + 00, FOG_LIGHT,    HIGH },
+    {  3 * 60 + 05, WATER_LIGHTS, HIGH },
+    {  3 * 60 + 59, DRESS,        HIGH },
     {  6 * 60 + 45, WATER_LIGHTS, LOW  },
-    {  6 * 60 + 51, DRESS,        LOW  },
+    {  6 * 60 + 00, DRESS,        LOW  },
+    { 10 * 60 + 30, FOG,          HIGH },
+    { 12 * 60 + 00, FOG,          LOW  },	
     { 12 * 60 + 46, PARFANJE,     HIGH },
     { 13 * 60 + 58, PARFANJE,     LOW  },
     { 15 * 60 + 30, WATER_LIGHTS, HIGH },
-    { 16 * 60 +  4, PARFANJE,     HIGH },
+    { 16 * 60 + 04, PARFANJE,     HIGH },
     { 17 * 60 + 48, WATER_LIGHTS, LOW  },
     { 17 * 60 + 48, PARFANJE,     LOW  },
+    { 19 * 60 + 00, WATER_LIGHTS, HIGH },
+    { 21 * 60 + 06, PARFANJE,     HIGH },
+    { 21 * 60 + 20, DRESS,        HIGH }, 
+    { 21 * 60 + 48, PARFANJE,     LOW  },
+    { 23 * 60 + 25, WATER_LIGHTS, LOW  },
+    { 23 * 60 + 25, DRESS,        LOW  },
     { 27 * 60 + 42, FOG,          HIGH },
     { 31 * 60 + 35, FOG,          LOW  },
     { 31 * 60 + 35, FOG_LIGHT,    LOW  },
